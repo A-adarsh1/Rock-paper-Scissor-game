@@ -14,6 +14,16 @@ choices.forEach((choice) => {
   });
 });
 
+const reset = () => {
+  userScorePara.innerText = 0;
+  userScore = 0;
+  compScorePara.innerText = 0;
+  computerScore = 0;
+  msg.innerText = "Play your move";
+  msg.style.backgroundColor = "#00111c";
+}
+
+
 
 const genComputerChoice = () => {
   const options = ["rock", "paper", "scissor"];
@@ -39,15 +49,6 @@ const showWinner = (userWin, userChoice, compChoice) => {
     msg.innerText = `You lost. ${compChoice} beats Your ${userChoice}`;
     msg.style.backgroundColor = "red";
   }
-}
-
-const reset = () => {
-  userScorePara.innerText = 0;
-  userScore = 0;
-  compScorePara.innerText = 0;
-  computerScore = 0;
-  msg.innerText = "Play your move";
-  msg.style.backgroundColor = "#00111c";
 }
 
 
