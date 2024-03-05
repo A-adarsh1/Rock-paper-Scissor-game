@@ -44,6 +44,8 @@ const showWinner = (userWin, userChoice, compChoice) => {
 const reset = () => {
   userScorePara.innerText = 0;
   compScorePara.innerText = 0;
+  userScore = 0;
+  computerScore = 0;
   msg.innerText = "Play your move";
   msg.style.backgroundColor = "#00111c";
 }
